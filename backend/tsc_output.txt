@@ -1,0 +1,42 @@
+src/repositories/AnalogyRepository.ts(5,16): error TS2304: Cannot find name 'getDatabase'.
+src/repositories/BookmarkRepository.ts(5,16): error TS2304: Cannot find name 'getDatabase'.
+src/repositories/ConceptRepository.ts(5,16): error TS2304: Cannot find name 'getDatabase'.
+src/repositories/KnowledgeMapRepository.ts(5,16): error TS2304: Cannot find name 'getDatabase'.
+src/repositories/LearningPathRepository.ts(5,16): error TS2304: Cannot find name 'getDatabase'.
+src/repositories/PracticeRepository.ts(5,16): error TS2304: Cannot find name 'getDatabase'.
+src/repositories/RelationshipRepository.ts(5,16): error TS2304: Cannot find name 'getDatabase'.
+src/repositories/SessionRepository.ts(5,16): error TS2304: Cannot find name 'getDatabase'.
+src/repositories/UserRepository.ts(5,16): error TS2304: Cannot find name 'getDatabase'.
+src/services/ai/orchestrator.ts(2,31): error TS2307: Cannot find module '../../prompts/promptManager.js' or its corresponding type declarations.
+src/services/ai/orchestrator.ts(3,24): error TS2307: Cannot find module '../../utils/logger.js' or its corresponding type declarations.
+src/services/analogy/AnalogyEngine.ts(3,31): error TS2307: Cannot find module '../prompts/PromptManager.js' or its corresponding type declarations.
+src/services/auth/AuthService.ts(53,21): error TS2304: Cannot find name 'verifyRefreshToken'.
+src/services/auth/TokenService.ts(11,14): error TS2769: No overload matches this call.
+  Overload 1 of 5, '(payload: string | object | Buffer<ArrayBufferLike>, secretOrPrivateKey: null, options?: (SignOptions & { algorithm: "none"; }) | undefined): string', gave the following error.
+    Argument of type 'string' is not assignable to parameter of type 'null'.
+  Overload 2 of 5, '(payload: string | object | Buffer<ArrayBufferLike>, secretOrPrivateKey: string | ArrayBuffer | SharedArrayBuffer | Buffer<ArrayBufferLike> | ... 17 more ... | DataView<...>, options?: SignOptions | undefined): string', gave the following error.
+    Type 'string' is not assignable to type 'number | StringValue | undefined'.
+  Overload 3 of 5, '(payload: string | object | Buffer<ArrayBufferLike>, secretOrPrivateKey: string | ArrayBuffer | SharedArrayBuffer | Buffer<ArrayBufferLike> | ... 17 more ... | DataView<...>, callback: SignCallback): void', gave the following error.
+    Object literal may only specify known properties, and 'expiresIn' does not exist in type 'SignCallback'.
+src/services/auth/TokenService.ts(15,14): error TS2769: No overload matches this call.
+  Overload 1 of 5, '(payload: string | object | Buffer<ArrayBufferLike>, secretOrPrivateKey: null, options?: (SignOptions & { algorithm: "none"; }) | undefined): string', gave the following error.
+    Argument of type 'string' is not assignable to parameter of type 'null'.
+  Overload 2 of 5, '(payload: string | object | Buffer<ArrayBufferLike>, secretOrPrivateKey: string | ArrayBuffer | SharedArrayBuffer | Buffer<ArrayBufferLike> | ... 17 more ... | DataView<...>, options?: SignOptions | undefined): string', gave the following error.
+    Type 'string' is not assignable to type 'number | StringValue | undefined'.
+  Overload 3 of 5, '(payload: string | object | Buffer<ArrayBufferLike>, secretOrPrivateKey: string | ArrayBuffer | SharedArrayBuffer | Buffer<ArrayBufferLike> | ... 17 more ... | DataView<...>, callback: SignCallback): void', gave the following error.
+    Object literal may only specify known properties, and 'expiresIn' does not exist in type 'SignCallback'.
+src/services/graph/engine.ts(2,59): error TS2307: Cannot find module '../../repositories/index.js' or its corresponding type declarations.
+src/services/graph/engine.ts(55,30): error TS7006: Parameter 'rel' implicitly has an 'any' type.
+src/services/graph/engine.ts(86,37): error TS2345: Argument of type 'string' is not assignable to parameter of type 'number'.
+src/services/graph/engine.ts(86,73): error TS2345: Argument of type 'string' is not assignable to parameter of type 'number'.
+src/services/graph/engine.ts(127,37): error TS2345: Argument of type 'string' is not assignable to parameter of type 'number'.
+src/services/graph/engine.ts(127,65): error TS2345: Argument of type 'string' is not assignable to parameter of type 'number'.
+src/services/graph/engine.ts(201,15): error TS7006: Parameter 'r' implicitly has an 'any' type.
+src/services/graph/engine.ts(202,12): error TS7006: Parameter 'r' implicitly has an 'any' type.
+src/services/graph/engine.ts(205,12): error TS7006: Parameter 'id' implicitly has an 'any' type.
+src/services/graph/engine.ts(206,16): error TS7006: Parameter 'c' implicitly has an 'any' type.
+src/services/graph/engine.ts(207,12): error TS7006: Parameter 'c' implicitly has an 'any' type.
+src/services/recommendation/engine.ts(135,40): error TS2353: Object literal may only specify known properties, and 'avgScore' does not exist in type '{ conceptId: string; score: number; attempts: number; }'.
+src/services/recommendation/engine.ts(146,52): error TS2339: Property 'avgScore' does not exist on type '{ conceptId: string; score: number; attempts: number; }'.
+src/services/recommendation/engine.ts(148,38): error TS2339: Property 'avgScore' does not exist on type '{ conceptId: string; score: number; attempts: number; }'.
+src/services/search/engine.ts(5,38): error TS2307: Cannot find module '../../utils/formatters.js' or its corresponding type declarations.

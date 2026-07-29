@@ -1,0 +1,40 @@
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding: var(--space-5);
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  text-align: left;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.feature-card:hover {
+  border-color: var(--accent-border);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.feature-card:active {
+  transform: translateY(0);
+}
+
+.feature-card__icon {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.feature-card__title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+.feature-card__desc {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}

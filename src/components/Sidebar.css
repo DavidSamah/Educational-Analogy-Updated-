@@ -1,0 +1,124 @@
+.sidebar {
+  width: var(--sidebar-width);
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-surface);
+  border-right: 1px solid var(--border);
+  z-index: var(--z-sidebar);
+  transition: transform 0.2s ease;
+}
+
+.sidebar__header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-5) var(--space-4);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.sidebar__logo {
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar__brand {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.sidebar__title {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: var(--text-h);
+  line-height: 1.2;
+}
+
+.sidebar__tagline {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.sidebar__nav {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--space-3) var(--space-2);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.sidebar__item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  width: 100%;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-lg);
+  color: var(--text-secondary);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  text-align: left;
+  transition: all 0.15s ease;
+}
+
+.sidebar__item:hover {
+  background: var(--bg);
+  color: var(--text-h);
+}
+
+.sidebar__item--active {
+  background: var(--accent-bg);
+  color: var(--accent);
+}
+
+.sidebar__item--active:hover {
+  background: var(--accent-bg);
+  color: var(--accent);
+}
+
+.sidebar__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.sidebar__label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebar__footer {
+  padding: var(--space-3) var(--space-2);
+  border-top: 1px solid var(--border-light);
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    transform: translateX(-100%);
+    box-shadow: var(--shadow-xl);
+  }
+
+  .sidebar--open {
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: 1025px) {
+  .sidebar__label {
+    display: inline;
+  }
+}
