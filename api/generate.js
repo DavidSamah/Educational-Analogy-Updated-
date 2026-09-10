@@ -33,9 +33,9 @@ export default async function handler(request, response) {
       return;
     }
 
-    const apiKey = process.env.OPENROUTER_API_KEY || process.env.VITE_OPENROUTER_API_KEY;
+    const apiKey = process.env.OPENROUTER_API_KEY;
     if (!apiKey) {
-      response.status(500).json({ error: "OpenRouter is not configured on the server" });
+      response.status(503).json({ error: "OpenRouter is not configured on Vercel. Add OPENROUTER_API_KEY to the Production environment." });
       return;
     }
 
@@ -64,7 +64,7 @@ export default async function handler(request, response) {
     if (!openRouterResponse.ok) {
       const providerMessage = data?.error?.message || responseText.slice(0, 200);
       console.error("OpenRouter request failed", openRouterResponse.status, providerMessage);
-      response.status(502).json({ error: `OpenRouter rejected the request (${openRouterResponse.status})` });
+      response.status(502).json({ error: `OpenRouter rejected the request (${openRouterResponse.status}). Check that OPENROUTER_API_KEY is active.` });
       return;
     }
 
