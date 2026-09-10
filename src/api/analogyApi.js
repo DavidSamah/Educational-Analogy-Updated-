@@ -10,7 +10,7 @@ export async function generateAnalogy(concept, perspective) {
             "Authorization": `Bearer ${import.meta.env.VITE_OPENROUTER_API_KEY}`,
         },
         body: JSON.stringify({
-            model: "openai/gpt-oss-20b:free",
+            model: "openai/gpt-4o-mini",
             messages: [
                 {
                     role: "system",

@@ -13,7 +13,7 @@ export const env = {
   JWT_EXPIRY: process.env.JWT_EXPIRY || "15m",
   JWT_REFRESH_EXPIRY: process.env.JWT_REFRESH_EXPIRY || "7d",
   OPENROUTER_API_KEY: process.env.OPENROUTER_API_KEY || "",
-  OPENROUTER_MODEL: process.env.OPENROUTER_MODEL || "openai/gpt-oss-20b:free",
+  OPENROUTER_MODEL: process.env.OPENROUTER_MODEL || "openai/gpt-4o-mini",
   CORS_ORIGIN: process.env.CORS_ORIGIN || "http://localhost:5173",
   RATE_LIMIT_WINDOW_MS: parseInt(process.env.RATE_LIMIT_WINDOW_MS || "900000", 10),
   RATE_LIMIT_MAX_REQUESTS: parseInt(process.env.RATE_LIMIT_MAX_REQUESTS || "100", 10),
